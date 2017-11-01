@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B517813D1B681753394BE4CE /* Pods_Insyde.framework */; };
 		ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */; };
-		ECAA17BF1FA78FAE00BF9B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BE1FA78FAE00BF9B56 /* ViewController.swift */; };
+		ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */; };
 		ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */; };
 		ECAA17C41FA78FAE00BF9B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */; };
 		ECAA17C71FA78FAE00BF9B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.release.xcconfig"; sourceTree = "<group>"; };
+		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
+		B517813D1B681753394BE4CE /* Pods_Insyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA17B91FA78FAD00BF9B56 /* Insyde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insyde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECAA17BE1FA78FAE00BF9B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		ECAA17C11FA78FAE00BF9B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAA17C61FA78FAE00BF9B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAA17C81FA78FAE00BF9B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAA17CE1FA7971200BF9B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18204F6CC5F644F59807FB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B517813D1B681753394BE4CE /* Pods_Insyde.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F18392C255E768B70B0E828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */,
+				4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC5B03581FA7BEA90034DA5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC5B03591FA7BEC70034DA5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC5B035A1FA7BECD0034DA5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		ECAA17B01FA78FAD00BF9B56 = {
 			isa = PBXGroup;
 			children = (
 				ECAA17BB1FA78FAD00BF9B56 /* Insyde */,
 				ECAA17BA1FA78FAD00BF9B56 /* Products */,
+				5F18392C255E768B70B0E828 /* Pods */,
+				18204F6CC5F644F59807FB0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +101,15 @@
 		ECAA17BB1FA78FAD00BF9B56 /* Insyde */ = {
 			isa = PBXGroup;
 			children = (
+				EC5B035A1FA7BECD0034DA5A /* Controller */,
+				EC5B03591FA7BEC70034DA5A /* View */,
+				EC5B03581FA7BEA90034DA5A /* Model */,
 				ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */,
-				ECAA17BE1FA78FAE00BF9B56 /* ViewController.swift */,
 				ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */,
 				ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */,
 				ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */,
 				ECAA17C81FA78FAE00BF9B56 /* Info.plist */,
+				ECAA17CE1FA7971200BF9B56 /* GoogleService-Info.plist */,
 			);
 			path = Insyde;
 			sourceTree = "<group>";
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECAA17CB1FA78FAE00BF9B56 /* Build configuration list for PBXNativeTarget "Insyde" */;
 			buildPhases = (
+				D691DFA1E23A5BA622AB8A09 /* [CP] Check Pods Manifest.lock */,
 				ECAA17B51FA78FAD00BF9B56 /* Sources */,
 				ECAA17B61FA78FAD00BF9B56 /* Frameworks */,
 				ECAA17B71FA78FAD00BF9B56 /* Resources */,
+				A09245312061BAD7A9743000 /* [CP] Embed Pods Frameworks */,
+				F3D79FBE1DEB861ED9CFE96E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +184,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A09245312061BAD7A9743000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insyde/Pods-Insyde-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D691DFA1E23A5BA622AB8A09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D79FBE1DEB861ED9CFE96E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insyde/Pods-Insyde-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECAA17B51FA78FAD00BF9B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAA17BF1FA78FAE00BF9B56 /* ViewController.swift in Sources */,
+				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
 				ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +373,7 @@
 		};
 		ECAA17CC1FA78FAE00BF9B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +388,7 @@
 		};
 		ECAA17CD1FA78FAE00BF9B56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
