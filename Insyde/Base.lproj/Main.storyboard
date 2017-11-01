@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Damascus.ttc">
+            <string>Damascus</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -16,12 +21,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a94-7E-Dsf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsydeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LIF-U2-DYB">
+                                        <rect key="frame" x="96" y="19" width="183" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="6Es-UL-x8s"/>
+                                    <constraint firstItem="LIF-U2-DYB" firstAttribute="leading" secondItem="a94-7E-Dsf" secondAttribute="leading" constant="96" id="BZm-ya-skW"/>
+                                    <constraint firstAttribute="bottom" secondItem="LIF-U2-DYB" secondAttribute="bottom" constant="20" id="LZh-IR-5cz"/>
+                                    <constraint firstItem="LIF-U2-DYB" firstAttribute="top" secondItem="a94-7E-Dsf" secondAttribute="top" constant="19" id="flu-l7-gZK"/>
+                                    <constraint firstAttribute="trailing" secondItem="LIF-U2-DYB" secondAttribute="trailing" constant="96" id="yM3-ox-tuO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFj-HC-Fdw">
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si no tiene cuenta, una sera creada automaticamente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71U-8f-qqj">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="67"/>
+                                        <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="71U-8f-qqj" secondAttribute="bottom" id="OT3-P2-Mj1"/>
+                                    <constraint firstItem="71U-8f-qqj" firstAttribute="leading" secondItem="lFj-HC-Fdw" secondAttribute="leading" constant="8" id="WqW-bi-d53"/>
+                                    <constraint firstAttribute="trailing" secondItem="71U-8f-qqj" secondAttribute="trailing" constant="8" id="aPe-CF-1p4"/>
+                                    <constraint firstAttribute="height" constant="67" id="cri-KU-6Cc"/>
+                                    <constraint firstItem="71U-8f-qqj" firstAttribute="top" secondItem="lFj-HC-Fdw" secondAttribute="top" id="nCc-aY-T5M"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoja un metodo para ingresar a su cuenta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWJ-LU-FSM">
+                                <rect key="frame" x="25" y="182" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="H3Y-RG-ZyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMK-J6-yqx">
+                                <rect key="frame" x="110" y="283" width="155" height="102"/>
+                                <color key="backgroundColor" red="0.23002448680000001" green="0.35028207300000003" blue="0.5958353877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="f">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B6O-IU-zxq">
+                                <rect key="frame" x="20" y="407" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contrasena" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3P-pb-I5Y">
+                                <rect key="frame" x="20" y="452" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-7f-nvA">
+                                <rect key="frame" x="20" y="513" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.75816315412521362" green="0.20480719208717346" blue="0.17498758435249329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B6O-IU-zxq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="12r-tL-t1y"/>
+                            <constraint firstItem="QPh-7f-nvA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="16x-pg-w68"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a94-7E-Dsf" secondAttribute="trailing" id="1Mg-RC-1eS"/>
+                            <constraint firstItem="lFj-HC-Fdw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2hN-cE-ciA"/>
+                            <constraint firstItem="kWJ-LU-FSM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="4qL-d0-Hl9"/>
+                            <constraint firstItem="lFj-HC-Fdw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5VI-hj-XZM"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="centerX" secondItem="a94-7E-Dsf" secondAttribute="centerX" id="6Xm-hc-vzA"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C6x-qz-Ajf"/>
+                            <constraint firstItem="QPh-7f-nvA" firstAttribute="top" secondItem="a3P-pb-I5Y" secondAttribute="bottom" constant="31" id="DWf-2j-uKm"/>
+                            <constraint firstItem="kWJ-LU-FSM" firstAttribute="top" secondItem="a94-7E-Dsf" secondAttribute="bottom" constant="15" id="E2C-xO-xYy"/>
+                            <constraint firstItem="a94-7E-Dsf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Iej-4I-GTn"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="top" secondItem="kWJ-LU-FSM" secondAttribute="bottom" constant="61" id="PFd-UQ-SUC"/>
+                            <constraint firstItem="B6O-IU-zxq" firstAttribute="top" secondItem="RMK-J6-yqx" secondAttribute="bottom" constant="22" id="boc-5v-eb9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWJ-LU-FSM" secondAttribute="trailing" constant="16" id="byl-HL-4Nz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6O-IU-zxq" secondAttribute="trailing" constant="20" id="mLm-Ks-VYx"/>
+                            <constraint firstItem="lFj-HC-Fdw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r1b-6E-2Ff"/>
+                            <constraint firstItem="a3P-pb-I5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sXo-2H-K91"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="swf-Co-3u7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QPh-7f-nvA" secondAttribute="trailing" constant="20" id="t0k-2a-Vcw"/>
+                            <constraint firstItem="a94-7E-Dsf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tMa-zN-YcC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3P-pb-I5Y" secondAttribute="trailing" constant="20" id="uAA-eH-z4E"/>
+                            <constraint firstItem="a3P-pb-I5Y" firstAttribute="top" secondItem="B6O-IU-zxq" secondAttribute="bottom" constant="15" id="x0B-Hy-WIC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InsydeLogo" width="171" height="171"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>
