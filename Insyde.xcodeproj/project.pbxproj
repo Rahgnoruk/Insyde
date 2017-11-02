@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B517813D1B681753394BE4CE /* Pods_Insyde.framework */; };
+		EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C01FAB434B006E820E /* RoundButton.swift */; };
+		EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C21FAB454E006E820E /* SignInButton.swift */; };
+		EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C41FAB46A7006E820E /* SignInTextField.swift */; };
 		ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */; };
 		ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */; };
 		ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */; };
 		ECAA17C41FA78FAE00BF9B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */; };
 		ECAA17C71FA78FAE00BF9B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */; };
+		ECC69EC71FAA8FE0000EE1C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */; };
+		ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC69EC81FAA9150000EE1C3 /* TopView.swift */; };
+		ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC69ECB1FAA91CE000EE1C3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.release.xcconfig"; sourceTree = "<group>"; };
 		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
 		B517813D1B681753394BE4CE /* Pods_Insyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7C07C01FAB434B006E820E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		EC7C07C21FAB454E006E820E /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
+		EC7C07C41FAB46A7006E820E /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 		ECAA17B91FA78FAD00BF9B56 /* Insyde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insyde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -26,7 +35,9 @@
 		ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAA17C61FA78FAE00BF9B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAA17C81FA78FAE00BF9B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECAA17CE1FA7971200BF9B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECC69EC81FAA9150000EE1C3 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		ECC69ECB1FAA91CE000EE1C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,10 @@
 		EC5B03591FA7BEC70034DA5A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECC69EC81FAA9150000EE1C3 /* TopView.swift */,
+				EC7C07C01FAB434B006E820E /* RoundButton.swift */,
+				EC7C07C21FAB454E006E820E /* SignInButton.swift */,
+				EC7C07C41FAB46A7006E820E /* SignInTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +116,9 @@
 		ECAA17BB1FA78FAD00BF9B56 /* Insyde */ = {
 			isa = PBXGroup;
 			children = (
+				ECC69ECA1FAA91AF000EE1C3 /* Utils */,
+				ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */,
+				ECAA17C81FA78FAE00BF9B56 /* Info.plist */,
 				EC5B035A1FA7BECD0034DA5A /* Controller */,
 				EC5B03591FA7BEC70034DA5A /* View */,
 				EC5B03581FA7BEA90034DA5A /* Model */,
@@ -108,10 +126,16 @@
 				ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */,
 				ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */,
 				ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */,
-				ECAA17C81FA78FAE00BF9B56 /* Info.plist */,
-				ECAA17CE1FA7971200BF9B56 /* GoogleService-Info.plist */,
 			);
 			path = Insyde;
+			sourceTree = "<group>";
+		};
+		ECC69ECA1FAA91AF000EE1C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECC69ECB1FAA91CE000EE1C3 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAA17C71FA78FAE00BF9B56 /* LaunchScreen.storyboard in Resources */,
+				ECC69EC71FAA8FE0000EE1C3 /* GoogleService-Info.plist in Resources */,
 				ECAA17C41FA78FAE00BF9B56 /* Assets.xcassets in Resources */,
 				ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */,
 			);
@@ -237,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */,
+				EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */,
 				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
+				EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */,
 				ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */,
+				ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */,
+				EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
 				INFOPLIST_FILE = Insyde/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde;
@@ -392,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
 				INFOPLIST_FILE = Insyde/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde;
