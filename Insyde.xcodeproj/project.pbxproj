@@ -12,6 +12,7 @@
 		EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C21FAB454E006E820E /* SignInButton.swift */; };
 		EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C41FAB46A7006E820E /* SignInTextField.swift */; };
 		ECA5BBC11FAB8463002203D2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5BBC01FAB8463002203D2 /* FeedVC.swift */; };
+		ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5BBC21FABA59C002203D2 /* CircleView.swift */; };
 		ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */; };
 		ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */; };
 		ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		ECA5BBBE1FAB633A002203D2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		ECA5BBBF1FAB7637002203D2 /* Insyde.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insyde.entitlements; sourceTree = "<group>"; };
 		ECA5BBC01FAB8463002203D2 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		ECA5BBC21FABA59C002203D2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		ECAA17B91FA78FAD00BF9B56 /* Insyde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insyde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA17BE1FA78FAE00BF9B56 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				EC7C07C01FAB434B006E820E /* RoundButton.swift */,
 				EC7C07C21FAB454E006E820E /* SignInButton.swift */,
 				EC7C07C41FAB46A7006E820E /* SignInTextField.swift */,
+				ECA5BBC21FABA59C002203D2 /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */,
 				ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */,
 				EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */,
 				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
