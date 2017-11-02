@@ -129,11 +129,48 @@
                     <connections>
                         <outlet property="emailField" destination="B6O-IU-zxq" id="pbM-LP-VJp"/>
                         <outlet property="passwordField" destination="a3P-pb-I5Y" id="DCh-nI-hPT"/>
+                        <segue destination="fPE-ud-qoM" kind="show" identifier="goToFeed" id="pmn-aN-v0n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="0mb-Ma-9gd">
+            <objects>
+                <viewController id="fPE-ud-qoM" customClass="FeedVC" customModule="Insyde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKv-A6-ZTx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7l-mf-LYi">
+                                <rect key="frame" x="259" y="10" width="107" height="39"/>
+                                <color key="backgroundColor" red="0.75816315412521362" green="0.20480719208717346" blue="0.17498758435249329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Salir">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SignOutTap:" destination="fPE-ud-qoM" eventType="touchUpInside" id="SAc-sj-j85"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.001497774850577116" green="0.57917535305023193" blue="0.62935906648635864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o7l-mf-LYi" firstAttribute="leading" secondItem="elb-h4-BHs" secondAttribute="leading" constant="259" id="19K-bu-VZl"/>
+                            <constraint firstItem="elb-h4-BHs" firstAttribute="bottom" secondItem="o7l-mf-LYi" secondAttribute="bottom" constant="618" id="AVd-nz-ACo"/>
+                            <constraint firstItem="o7l-mf-LYi" firstAttribute="top" secondItem="BKv-A6-ZTx" secondAttribute="top" constant="10" id="VpJ-wg-POV"/>
+                            <constraint firstItem="elb-h4-BHs" firstAttribute="trailing" secondItem="o7l-mf-LYi" secondAttribute="trailing" constant="9" id="ahV-FI-SFa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="elb-h4-BHs"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="YuZ-7z-4Wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wG1-BR-ndb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

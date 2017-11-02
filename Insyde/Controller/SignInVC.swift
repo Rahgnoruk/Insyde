@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -18,14 +19,14 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool){
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
-
+    
     @IBAction func facebookBtnTap(_ sender: AnyObject) {
         let facebookLogin = FBSDKLoginManager()
         
@@ -47,6 +48,9 @@ class SignInVC: UIViewController {
                 print("JESS: Unable to authenticate with Firebae - \(String(describing: error))")
             }else{
                 print("JESS: Successfully authenticated with Firebase")
+                if let user=user{
+                    self.addToKeychain(id: user.uid)
+                }
             }
         })
     }
@@ -57,6 +61,9 @@ class SignInVC: UIViewController {
             Auth.auth().signIn(withEmail: email, password: pwd, completion: {(user, error) in
                 if(error == nil){
                     print("JESS: Email user authenticated with Firebase")
+                    if let user=user{
+                        self.addToKeychain(id: user.uid)
+                    }
                 }else{
                     //Ya que no tiene cuenta, crear cuenta
                     Auth.auth().createUser(withEmail: email, password: pwd, completion: {(user, error) in
@@ -64,12 +71,19 @@ class SignInVC: UIViewController {
                             print("JESS: Unable to authenticate with Firebase using mail")
                         }else{
                             print("JESS: Successfully authenticated with Firebase using mail");
+                            if let user=user{
+                                self.addToKeychain(id: user.uid)
+                            }
                         }
                     })
                 }
             })
-            
         }
+    }
+    func addToKeychain(id: String){
+        let result = KeychainWrapper.standard.set(id, forKey: KEY_UID);
+        print("JESS: Data saved to keychain \(result)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 }
 
