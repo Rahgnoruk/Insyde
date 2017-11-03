@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B517813D1B681753394BE4CE /* Pods_Insyde.framework */; };
+		EC74EC0A1FABF01900CE0301 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74EC091FABF01900CE0301 /* PostCell.swift */; };
 		EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C01FAB434B006E820E /* RoundButton.swift */; };
 		EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C21FAB454E006E820E /* SignInButton.swift */; };
 		EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C41FAB46A7006E820E /* SignInTextField.swift */; };
@@ -27,6 +28,7 @@
 		4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.release.xcconfig"; sourceTree = "<group>"; };
 		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
 		B517813D1B681753394BE4CE /* Pods_Insyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC74EC091FABF01900CE0301 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EC7C07C01FAB434B006E820E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EC7C07C21FAB454E006E820E /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		EC7C07C41FAB46A7006E820E /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				EC7C07C21FAB454E006E820E /* SignInButton.swift */,
 				EC7C07C41FAB46A7006E820E /* SignInTextField.swift */,
 				ECA5BBC21FABA59C002203D2 /* CircleView.swift */,
+				EC74EC091FABF01900CE0301 /* PostCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */,
 				ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */,
 				EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */,
+				EC74EC0A1FABF01900CE0301 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

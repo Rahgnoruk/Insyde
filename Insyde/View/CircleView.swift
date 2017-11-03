@@ -9,7 +9,7 @@
 import UIKit
 
 class CircleView: UIImageView {
-
+    //Jess quita el awake porque no le gusto la sombra
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.shadowColor = UIColor(red: SHADOW_GRAY, green: SHADOW_GRAY, blue: SHADOW_GRAY, alpha: 0.6).cgColor
@@ -17,11 +17,17 @@ class CircleView: UIImageView {
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
     }
-    
+   
     override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        layer.cornerRadius = self.frame.width/2;
+        layer.cornerRadius = self.frame.width/2
     }
-
+    
+    /*
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        layer.cornerRadius = self.frame.width/2;
+        //el agrega esto
+        //clipsToBounds = true
+    }
+ */
 }
