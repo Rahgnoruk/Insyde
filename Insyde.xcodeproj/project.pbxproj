@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B517813D1B681753394BE4CE /* Pods_Insyde.framework */; };
 		EC74EC0A1FABF01900CE0301 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74EC091FABF01900CE0301 /* PostCell.swift */; };
+		EC74EC0D1FAC03BD00CE0301 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74EC0C1FAC03BD00CE0301 /* DataService.swift */; };
 		EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C01FAB434B006E820E /* RoundButton.swift */; };
 		EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C21FAB454E006E820E /* SignInButton.swift */; };
 		EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C41FAB46A7006E820E /* SignInTextField.swift */; };
@@ -19,9 +20,9 @@
 		ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */; };
 		ECAA17C41FA78FAE00BF9B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */; };
 		ECAA17C71FA78FAE00BF9B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */; };
-		ECC69EC71FAA8FE0000EE1C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */; };
 		ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC69EC81FAA9150000EE1C3 /* TopView.swift */; };
 		ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC69ECB1FAA91CE000EE1C3 /* Constants.swift */; };
+		ECF666121FAC1900008D93C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECF666111FAC1900008D93C2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
 		B517813D1B681753394BE4CE /* Pods_Insyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC74EC091FABF01900CE0301 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EC74EC0C1FAC03BD00CE0301 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EC7C07C01FAB434B006E820E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EC7C07C21FAB454E006E820E /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		EC7C07C41FAB46A7006E820E /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
@@ -46,9 +48,9 @@
 		ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAA17C61FA78FAE00BF9B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAA17C81FA78FAE00BF9B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECC69EC81FAA9150000EE1C3 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		ECC69ECB1FAA91CE000EE1C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECF666111FAC1900008D93C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		EC74EC0B1FAC039B00CE0301 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC74EC0C1FAC03BD00CE0301 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		ECAA17B01FA78FAD00BF9B56 = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +144,10 @@
 		ECAA17BB1FA78FAD00BF9B56 /* Insyde */ = {
 			isa = PBXGroup;
 			children = (
+				ECF666111FAC1900008D93C2 /* GoogleService-Info.plist */,
+				EC74EC0B1FAC039B00CE0301 /* Services */,
 				ECA5BBBF1FAB7637002203D2 /* Insyde.entitlements */,
 				ECC69ECA1FAA91AF000EE1C3 /* Utils */,
-				ECC69EC61FAA8FDB000EE1C3 /* GoogleService-Info.plist */,
 				ECAA17C81FA78FAE00BF9B56 /* Info.plist */,
 				EC5B035A1FA7BECD0034DA5A /* Controller */,
 				EC5B03591FA7BEC70034DA5A /* View */,
@@ -225,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAA17C71FA78FAE00BF9B56 /* LaunchScreen.storyboard in Resources */,
-				ECC69EC71FAA8FE0000EE1C3 /* GoogleService-Info.plist in Resources */,
+				ECF666121FAC1900008D93C2 /* GoogleService-Info.plist in Resources */,
 				ECAA17C41FA78FAE00BF9B56 /* Assets.xcassets in Resources */,
 				ECAA17C21FA78FAE00BF9B56 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +302,7 @@
 				EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */,
 				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
 				EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */,
+				EC74EC0D1FAC03BD00CE0301 /* DataService.swift in Sources */,
 				ECA5BBC11FAB8463002203D2 /* FeedVC.swift in Sources */,
 				ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */,
 				ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */,

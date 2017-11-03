@@ -49,7 +49,8 @@ class SignInVC: UIViewController {
             }else{
                 print("JESS: Successfully authenticated with Firebase")
                 if let user=user{
-                    self.addToKeychain(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -62,7 +63,8 @@ class SignInVC: UIViewController {
                 if(error == nil){
                     print("JESS: Email user authenticated with Firebase")
                     if let user=user{
-                        self.addToKeychain(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 }else{
                     //Ya que no tiene cuenta, crear cuenta
@@ -72,7 +74,8 @@ class SignInVC: UIViewController {
                         }else{
                             print("JESS: Successfully authenticated with Firebase using mail");
                             if let user=user{
-                                self.addToKeychain(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -80,7 +83,8 @@ class SignInVC: UIViewController {
             })
         }
     }
-    func addToKeychain(id: String){
+    func completeSignIn(id: String, userData: Dictionary<String, String>){
+        DataService.ds.createFirebaseUser(uid: id, userData: userData)
         let result = KeychainWrapper.standard.set(id, forKey: KEY_UID);
         print("JESS: Data saved to keychain \(result)")
         performSegue(withIdentifier: "goToFeed", sender: nil)

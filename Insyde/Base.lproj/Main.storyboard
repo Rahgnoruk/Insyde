@@ -258,7 +258,7 @@
                                                                         <constraint firstAttribute="height" constant="150" id="KUh-tD-MX3"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FQA-YL-9UY">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FQA-YL-9UY">
                                                                     <rect key="frame" x="0.0" y="206" width="327" height="152"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
