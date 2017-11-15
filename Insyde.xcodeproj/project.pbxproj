@@ -13,6 +13,7 @@
 		EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C01FAB434B006E820E /* RoundButton.swift */; };
 		EC7C07C31FAB454E006E820E /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C21FAB454E006E820E /* SignInButton.swift */; };
 		EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C41FAB46A7006E820E /* SignInTextField.swift */; };
+		EC9CE3391FBCCBF3002ADAAF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CE3381FBCCBF3002ADAAF /* Post.swift */; };
 		ECA5BBC11FAB8463002203D2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5BBC01FAB8463002203D2 /* FeedVC.swift */; };
 		ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5BBC21FABA59C002203D2 /* CircleView.swift */; };
 		ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA17BC1FA78FAE00BF9B56 /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		EC7C07C01FAB434B006E820E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EC7C07C21FAB454E006E820E /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		EC7C07C41FAB46A7006E820E /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
+		EC9CE3381FBCCBF3002ADAAF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ECA5BBBB1FAB633A002203D2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		ECA5BBBC1FAB633A002203D2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/Bolts.framework"; sourceTree = "<group>"; };
 		ECA5BBBD1FAB633A002203D2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		EC5B03581FA7BEA90034DA5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CE3381FBCCBF3002ADAAF /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */,
 				ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */,
 				EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */,
+				EC9CE3391FBCCBF3002ADAAF /* Post.swift in Sources */,
 				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
 				EC7C07C51FAB46A7006E820E /* SignInTextField.swift in Sources */,
 				EC74EC0D1FAC03BD00CE0301 /* DataService.swift in Sources */,
