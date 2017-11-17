@@ -14,10 +14,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cameraButton: CircleView!
+    @IBOutlet weak var titleField: UITextField!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +72,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage{
             cameraButton.image = image
+            imageSelected = true
         }else{
             print("JESS: A valid image wasn't selected")
         }
@@ -79,6 +82,30 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
+    }
+    @IBAction func uploadButtonTapped(_ sender: Any) {
+        //guard hace el if siguiente, qe se asegura de que no este vacio
+        guard let title = titleField.text, title != "" else{
+            print("JESS: Title field is empty")
+            return //es mas parecido a un break que un return tradicional
+        }
+        guard let img = cameraButton.image, imageSelected else{
+            print("JESS: An image must be selected")
+            return
+        }
+        if let imgData = UIImageJPEGRepresentation(img, 0.2){
+            let imageUid = NSUUID().uuidString
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/jpeg"
+            DataService.ds.REF_POST_IMAGES.child(imageUid).putData(imgData, metadata: metaData){ (metadata, error) in
+                if error != nil{
+                    print("JESS: Unable to upload image to Storage")
+                }else{
+                    print("Successfully uploaded image to Storage")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                }
+            }
+        }
     }
     
     @IBAction func SignOutTap(_ sender: Any) {

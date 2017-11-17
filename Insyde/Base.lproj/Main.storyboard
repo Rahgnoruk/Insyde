@@ -217,6 +217,9 @@
                                                     <constraint firstAttribute="height" constant="64" id="gxL-8I-oy7"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="uploadButtonTapped:" destination="fPE-ud-qoM" eventType="touchUpInside" id="1BQ-J8-LhW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -319,6 +322,7 @@
                     <connections>
                         <outlet property="cameraButton" destination="MIZ-fb-I0m" id="0PY-ga-Mv3"/>
                         <outlet property="tableView" destination="CmW-jw-nhU" id="hS5-Bf-nzR"/>
+                        <outlet property="titleField" destination="Vkc-Ke-brW" id="0wq-zX-lFW"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="YuZ-7z-4Wc"/>
                     </connections>
                 </viewController>
