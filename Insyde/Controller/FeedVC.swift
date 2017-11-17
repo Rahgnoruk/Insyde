@@ -9,6 +9,7 @@
 import UIKit
 import SwiftKeychainWrapper
 import Firebase
+
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,6 +17,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self;
@@ -50,10 +53,18 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell{
-            cell.configureCell(post: post)
-            return cell
+            
+            if let img = FeedVC.imageCache.object(forKey: post.pdfURL as NSString){
+                cell.configureCell(post: post, img: img)
+                return cell
+            }else{
+                cell.configureCell(post: post)
+                return cell
+            }
+ 
         }else{
             return PostCell()
+ 
         }
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

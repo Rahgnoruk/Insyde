@@ -37,7 +37,7 @@ class Post{
         if let autores = postData["autores"] as? String{
             self._autores = autores
         }
-        if let pdfURL = postData["pdfURL"] as? String{
+        if let pdfURL = postData["pdfUrl"] as? String{
             self._pdfURL = pdfURL
         }
         if let titulo = postData["titulo"] as? String{
