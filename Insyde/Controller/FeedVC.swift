@@ -103,9 +103,26 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 }else{
                     print("Successfully uploaded image to Storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL{
+                        self.postToFirebase(imgUrl: url)
+                    }
                 }
             }
         }
+    }
+    
+    func postToFirebase(imgUrl: String){
+        let post: Dictionary<String, Any> = [
+            "autores": "Need to add an input field",
+            "pdfUrl": imgUrl,
+            "titulo": titleField.text!
+        ]
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        titleField.text = ""
+        imageSelected = false
+        cameraButton.image = UIImage(named:"add-Image")
     }
     
     @IBAction func SignOutTap(_ sender: Any) {
