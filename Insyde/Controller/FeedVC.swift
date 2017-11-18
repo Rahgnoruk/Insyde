@@ -117,6 +117,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             "pdfUrl": imgUrl,
             "titulo": titleField.text!
         ]
+        
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
         firebasePost.setValue(post)
         
