@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
+    </dependencies>
+    <scenes>
+        <!--StartInterface-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="StartInterface" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InsydeWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="33" alignment="left" text="Insyde" id="rRd-bJ-xMg"/>
+                        <button width="1" height="38" alignment="left" title="Top 5 Articulos" id="6N1-7y-sFY">
+                            <connections>
+                                <action selector="passTop" destination="AgC-eL-Hgc" id="ekt-F7-NyZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="5 mas Nuevos" id="J69-AA-aXP">
+                            <connections>
+                                <action selector="passNew" destination="AgC-eL-Hgc" id="Bwu-IN-YFS"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="213" y="229"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="968"/>
+        </scene>
+        <!--SecondInterface-->
+        <scene sceneID="Uq6-o1-aTc">
+            <objects>
+                <controller identifier="SecondInterface" id="MbE-Xz-jEd" customClass="InterfaceControllerNew" customModule="InsydeWatch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="btn1" id="jVs-ak-OmE">
+                            <connections>
+                                <action selector="btn1Actn" destination="MbE-Xz-jEd" id="shc-De-G3Z"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="btn2" id="3jW-ro-dlk">
+                            <connections>
+                                <action selector="btn2Actn" destination="MbE-Xz-jEd" id="8Qf-oD-vLc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="btn3" id="090-vG-d2W">
+                            <connections>
+                                <action selector="btn3Actn" destination="MbE-Xz-jEd" id="LBo-v6-3Eo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="btn4" id="rMc-yK-93J">
+                            <connections>
+                                <action selector="btn4Actn" destination="MbE-Xz-jEd" id="hf9-Sk-s0a"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="btn5" id="rMu-hu-66O">
+                            <connections>
+                                <action selector="btn5Actn" destination="MbE-Xz-jEd" id="dFz-fZ-CZq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnTitle1" destination="jVs-ak-OmE" id="Ffl-uT-fJK"/>
+                        <outlet property="btnTitle2" destination="3jW-ro-dlk" id="LLO-ve-e8N"/>
+                        <outlet property="btnTitle3" destination="090-vG-d2W" id="1p7-1s-omY"/>
+                        <outlet property="btnTitle4" destination="rMc-yK-93J" id="TA0-ma-7n7"/>
+                        <outlet property="btnTitle5" destination="rMu-hu-66O" id="TnL-x8-YqE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="440" y="230"/>
+        </scene>
+        <!--DetailInterface-->
+        <scene sceneID="gAz-2F-rGt">
+            <objects>
+                <controller identifier="DetailInterface" id="djp-ZK-32r" customClass="InterfaceControllerLast" customModule="InsydeWatch_Extension">
+                    <items>
+                        <imageView alignment="left" id="ksn-2y-R25"/>
+                        <label width="104" height="60" alignment="left" text="Label" id="dDE-An-gpb"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgFinal" destination="ksn-2y-R25" id="hex-ta-n21"/>
+                        <outlet property="labelFin" destination="dDE-An-gpb" id="3nO-YF-0o6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="707" y="229"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="InsydeWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="968"/>
+        </scene>
+    </scenes>
+</document>

@@ -146,14 +146,25 @@
                     <view key="view" contentMode="scaleToFill" id="JGn-tE-5xc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-eT-RpD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vub-eT-RpD" secondAttribute="trailing" id="Gvo-Of-ayW"/>
+                            <constraint firstItem="Vub-eT-RpD" firstAttribute="bottom" secondItem="Uyv-Wb-ibt" secondAttribute="bottom" id="cgh-hm-TPj"/>
+                            <constraint firstItem="Vub-eT-RpD" firstAttribute="leading" secondItem="JGn-tE-5xc" secondAttribute="leading" id="dxq-bB-Yb4"/>
+                            <constraint firstItem="Vub-eT-RpD" firstAttribute="top" secondItem="Uyv-Wb-ibt" secondAttribute="top" id="qpm-D9-z8X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uyv-Wb-ibt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa de Seguridad" id="T0r-aZ-MEE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0A-pw-cke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="485"/>
+            <point key="canvasLocation" x="1861.5999999999999" y="484.40779610194909"/>
         </scene>
         <!--CatalogosVC-->
         <scene sceneID="daR-GX-YGr">

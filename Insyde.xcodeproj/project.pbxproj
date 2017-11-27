@@ -14,8 +14,25 @@
 		EC2EFCB71FCA496800A642CC /* DesplegarCatalogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2EFCB61FCA496800A642CC /* DesplegarCatalogoVC.swift */; };
 		EC2EFCBA1FCA49E900A642CC /* PublicacionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2EFCB91FCA49E900A642CC /* PublicacionModel.swift */; };
 		EC2EFCBC1FCA4A0300A642CC /* PublicacionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2EFCBB1FCA4A0300A642CC /* PublicacionCell.swift */; };
+		EC332B981FCBC6F600819FA3 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B8F1FCBC6F600819FA3 /* GeoFire.m */; };
+		EC332B991FCBC6F600819FA3 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B911FCBC6F600819FA3 /* GFBase32Utils.m */; };
+		EC332B9A1FCBC6F600819FA3 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B931FCBC6F600819FA3 /* GFGeoHash.m */; };
+		EC332B9B1FCBC6F600819FA3 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B951FCBC6F600819FA3 /* GFGeoHashQuery.m */; };
+		EC332B9C1FCBC6F600819FA3 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B971FCBC6F600819FA3 /* GFQuery.m */; };
 		EC356D4C1FBF883C00196013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC356D4B1FBF883C00196013 /* GoogleService-Info.plist */; };
 		EC4517171FCB4EE70065900D /* ShadowRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4517161FCB4EE70065900D /* ShadowRoundedImage.swift */; };
+		EC6FC76A1FCBD4880046D909 /* InsydeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC6FC76F1FCBD4880046D909 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC76E1FCBD4880046D909 /* InterfaceController.swift */; };
+		EC6FC7711FCBD4880046D909 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7701FCBD4880046D909 /* ExtensionDelegate.swift */; };
+		EC6FC7731FCBD4880046D909 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7721FCBD4880046D909 /* NotificationController.swift */; };
+		EC6FC7751FCBD4880046D909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6FC7741FCBD4880046D909 /* Assets.xcassets */; };
+		EC6FC77A1FCBD4880046D909 /* InsydeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC6FC75D1FCBD4880046D909 /* InsydeWatch.app */; };
+		EC6FC78A1FCBD5310046D909 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6FC7881FCBD5310046D909 /* Interface.storyboard */; };
+		EC6FC78E1FCBD5D90046D909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6FC78D1FCBD5D90046D909 /* Assets.xcassets */; };
+		EC6FC7941FCBD67C0046D909 /* InterfaceControllerLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7911FCBD67B0046D909 /* InterfaceControllerLast.swift */; };
+		EC6FC7951FCBD67C0046D909 /* FiveTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7921FCBD67C0046D909 /* FiveTop.swift */; };
+		EC6FC7961FCBD67C0046D909 /* FiveNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7931FCBD67C0046D909 /* FiveNew.swift */; };
+		EC6FC7981FCBD80B0046D909 /* InterfaceControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7971FCBD80B0046D909 /* InterfaceControllerNew.swift */; };
 		EC74EC0A1FABF01900CE0301 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74EC091FABF01900CE0301 /* PostCell.swift */; };
 		EC74EC0D1FAC03BD00CE0301 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74EC0C1FAC03BD00CE0301 /* DataService.swift */; };
 		EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C07C01FAB434B006E820E /* RoundButton.swift */; };
@@ -34,6 +51,48 @@
 		ECD72A621FC0E88A007C0B1C /* CatalogosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD72A611FC0E88A007C0B1C /* CatalogosVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC6FC76B1FCBD4880046D909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECAA17B11FA78FAD00BF9B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6FC7681FCBD4880046D909;
+			remoteInfo = "InsydeWatch Extension";
+		};
+		EC6FC7781FCBD4880046D909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECAA17B11FA78FAD00BF9B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6FC75C1FCBD4880046D909;
+			remoteInfo = InsydeWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC6FC7801FCBD4880046D909 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC6FC76A1FCBD4880046D909 /* InsydeWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6FC7821FCBD4880046D909 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EC6FC77A1FCBD4880046D909 /* InsydeWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.release.xcconfig"; sourceTree = "<group>"; };
 		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +103,38 @@
 		EC2EFCB61FCA496800A642CC /* DesplegarCatalogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesplegarCatalogoVC.swift; sourceTree = "<group>"; };
 		EC2EFCB91FCA49E900A642CC /* PublicacionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicacionModel.swift; sourceTree = "<group>"; };
 		EC2EFCBB1FCA4A0300A642CC /* PublicacionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicacionCell.swift; sourceTree = "<group>"; };
+		EC332B881FCBC6F600819FA3 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		EC332B891FCBC6F600819FA3 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		EC332B8A1FCBC6F600819FA3 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		EC332B8B1FCBC6F600819FA3 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		EC332B8C1FCBC6F600819FA3 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		EC332B8E1FCBC6F600819FA3 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		EC332B8F1FCBC6F600819FA3 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		EC332B901FCBC6F600819FA3 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		EC332B911FCBC6F600819FA3 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		EC332B921FCBC6F600819FA3 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		EC332B931FCBC6F600819FA3 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		EC332B941FCBC6F600819FA3 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		EC332B951FCBC6F600819FA3 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		EC332B961FCBC6F600819FA3 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		EC332B971FCBC6F600819FA3 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		EC356D4B1FBF883C00196013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC4517161FCB4EE70065900D /* ShadowRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowRoundedImage.swift; sourceTree = "<group>"; };
+		EC6FC75D1FCBD4880046D909 /* InsydeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsydeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6FC7641FCBD4880046D909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InsydeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6FC76E1FCBD4880046D909 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EC6FC7701FCBD4880046D909 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EC6FC7721FCBD4880046D909 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EC6FC7741FCBD4880046D909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6FC7761FCBD4880046D909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6FC7771FCBD4880046D909 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EC6FC7881FCBD5310046D909 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		EC6FC78D1FCBD5D90046D909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6FC7911FCBD67B0046D909 /* InterfaceControllerLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerLast.swift; sourceTree = "<group>"; };
+		EC6FC7921FCBD67C0046D909 /* FiveTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveTop.swift; sourceTree = "<group>"; };
+		EC6FC7931FCBD67C0046D909 /* FiveNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveNew.swift; sourceTree = "<group>"; };
+		EC6FC7971FCBD80B0046D909 /* InterfaceControllerNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerNew.swift; sourceTree = "<group>"; };
 		EC74EC091FABF01900CE0301 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EC74EC0C1FAC03BD00CE0301 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EC7C07C01FAB434B006E820E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -72,6 +161,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC6FC7661FCBD4880046D909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECAA17B61FA78FAD00BF9B56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +198,44 @@
 				4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC332B861FCBC6F600819FA3 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				EC332B871FCBC6F600819FA3 /* API */,
+				EC332B8C1FCBC6F600819FA3 /* GeoFire-Prefix.pch */,
+				EC332B8D1FCBC6F600819FA3 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		EC332B871FCBC6F600819FA3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC332B881FCBC6F600819FA3 /* GeoFire.h */,
+				EC332B891FCBC6F600819FA3 /* GFCircleQuery.h */,
+				EC332B8A1FCBC6F600819FA3 /* GFQuery.h */,
+				EC332B8B1FCBC6F600819FA3 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EC332B8D1FCBC6F600819FA3 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				EC332B8E1FCBC6F600819FA3 /* GeoFire+Private.h */,
+				EC332B8F1FCBC6F600819FA3 /* GeoFire.m */,
+				EC332B901FCBC6F600819FA3 /* GFBase32Utils.h */,
+				EC332B911FCBC6F600819FA3 /* GFBase32Utils.m */,
+				EC332B921FCBC6F600819FA3 /* GFGeoHash.h */,
+				EC332B931FCBC6F600819FA3 /* GFGeoHash.m */,
+				EC332B941FCBC6F600819FA3 /* GFGeoHashQuery.h */,
+				EC332B951FCBC6F600819FA3 /* GFGeoHashQuery.m */,
+				EC332B961FCBC6F600819FA3 /* GFQuery+Private.h */,
+				EC332B971FCBC6F600819FA3 /* GFQuery.m */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		EC5B03581FA7BEA90034DA5A /* Model */ = {
@@ -142,6 +276,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		EC6FC75E1FCBD4880046D909 /* InsydeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EC6FC78D1FCBD5D90046D909 /* Assets.xcassets */,
+				EC6FC7881FCBD5310046D909 /* Interface.storyboard */,
+				EC6FC7641FCBD4880046D909 /* Info.plist */,
+			);
+			path = InsydeWatch;
+			sourceTree = "<group>";
+		};
+		EC6FC76D1FCBD4880046D909 /* InsydeWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC6FC76E1FCBD4880046D909 /* InterfaceController.swift */,
+				EC6FC7701FCBD4880046D909 /* ExtensionDelegate.swift */,
+				EC6FC7721FCBD4880046D909 /* NotificationController.swift */,
+				EC6FC7741FCBD4880046D909 /* Assets.xcassets */,
+				EC6FC7761FCBD4880046D909 /* Info.plist */,
+				EC6FC7771FCBD4880046D909 /* PushNotificationPayload.apns */,
+				EC6FC7971FCBD80B0046D909 /* InterfaceControllerNew.swift */,
+				EC6FC7931FCBD67C0046D909 /* FiveNew.swift */,
+				EC6FC7921FCBD67C0046D909 /* FiveTop.swift */,
+				EC6FC7911FCBD67B0046D909 /* InterfaceControllerLast.swift */,
+			);
+			path = "InsydeWatch Extension";
+			sourceTree = "<group>";
+		};
 		EC74EC0B1FAC039B00CE0301 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				ECAA17BB1FA78FAD00BF9B56 /* Insyde */,
+				EC6FC75E1FCBD4880046D909 /* InsydeWatch */,
+				EC6FC76D1FCBD4880046D909 /* InsydeWatch Extension */,
 				ECAA17BA1FA78FAD00BF9B56 /* Products */,
 				5F18392C255E768B70B0E828 /* Pods */,
 				18204F6CC5F644F59807FB0B /* Frameworks */,
@@ -164,6 +327,8 @@
 			isa = PBXGroup;
 			children = (
 				ECAA17B91FA78FAD00BF9B56 /* Insyde.app */,
+				EC6FC75D1FCBD4880046D909 /* InsydeWatch.app */,
+				EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +336,7 @@
 		ECAA17BB1FA78FAD00BF9B56 /* Insyde */ = {
 			isa = PBXGroup;
 			children = (
+				EC332B861FCBC6F600819FA3 /* GeoFire */,
 				EC356D4B1FBF883C00196013 /* GoogleService-Info.plist */,
 				ECA5BBBF1FAB7637002203D2 /* Insyde.entitlements */,
 				ECAA17C81FA78FAE00BF9B56 /* Info.plist */,
@@ -198,6 +364,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EC6FC75C1FCBD4880046D909 /* InsydeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6FC7811FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch" */;
+			buildPhases = (
+				EC6FC75B1FCBD4880046D909 /* Resources */,
+				EC6FC7801FCBD4880046D909 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6FC76C1FCBD4880046D909 /* PBXTargetDependency */,
+			);
+			name = InsydeWatch;
+			productName = InsydeWatch;
+			productReference = EC6FC75D1FCBD4880046D909 /* InsydeWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EC6FC7681FCBD4880046D909 /* InsydeWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6FC77F1FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch Extension" */;
+			buildPhases = (
+				EC6FC7651FCBD4880046D909 /* Sources */,
+				EC6FC7661FCBD4880046D909 /* Frameworks */,
+				EC6FC7671FCBD4880046D909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InsydeWatch Extension";
+			productName = "InsydeWatch Extension";
+			productReference = EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		ECAA17B81FA78FAD00BF9B56 /* Insyde */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECAA17CB1FA78FAE00BF9B56 /* Build configuration list for PBXNativeTarget "Insyde" */;
@@ -208,10 +408,12 @@
 				ECAA17B71FA78FAD00BF9B56 /* Resources */,
 				A09245312061BAD7A9743000 /* [CP] Embed Pods Frameworks */,
 				F3D79FBE1DEB861ED9CFE96E /* [CP] Copy Pods Resources */,
+				EC6FC7821FCBD4880046D909 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC6FC7791FCBD4880046D909 /* PBXTargetDependency */,
 			);
 			name = Insyde;
 			productName = Insyde;
@@ -224,10 +426,18 @@
 		ECAA17B11FA78FAD00BF9B56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = TonyfiedProductions;
 				TargetAttributes = {
+					EC6FC75C1FCBD4880046D909 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					EC6FC7681FCBD4880046D909 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					ECAA17B81FA78FAD00BF9B56 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -253,11 +463,30 @@
 			projectRoot = "";
 			targets = (
 				ECAA17B81FA78FAD00BF9B56 /* Insyde */,
+				EC6FC75C1FCBD4880046D909 /* InsydeWatch */,
+				EC6FC7681FCBD4880046D909 /* InsydeWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC6FC75B1FCBD4880046D909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6FC78E1FCBD5D90046D909 /* Assets.xcassets in Resources */,
+				EC6FC78A1FCBD5310046D909 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6FC7671FCBD4880046D909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6FC7751FCBD4880046D909 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECAA17B71FA78FAD00BF9B56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,14 +549,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC6FC7651FCBD4880046D909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6FC7731FCBD4880046D909 /* NotificationController.swift in Sources */,
+				EC6FC7941FCBD67C0046D909 /* InterfaceControllerLast.swift in Sources */,
+				EC6FC7961FCBD67C0046D909 /* FiveNew.swift in Sources */,
+				EC6FC7711FCBD4880046D909 /* ExtensionDelegate.swift in Sources */,
+				EC6FC7951FCBD67C0046D909 /* FiveTop.swift in Sources */,
+				EC6FC7981FCBD80B0046D909 /* InterfaceControllerNew.swift in Sources */,
+				EC6FC76F1FCBD4880046D909 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECAA17B51FA78FAD00BF9B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */,
 				EC4517171FCB4EE70065900D /* ShadowRoundedImage.swift in Sources */,
+				EC332B9A1FCBC6F600819FA3 /* GFGeoHash.m in Sources */,
 				ECC69EC91FAA9150000EE1C3 /* TopView.swift in Sources */,
 				EC7C07C11FAB434B006E820E /* RoundButton.swift in Sources */,
+				EC332B9B1FCBC6F600819FA3 /* GFGeoHashQuery.m in Sources */,
 				EC2EFCBA1FCA49E900A642CC /* PublicacionModel.swift in Sources */,
 				EC9CE3391FBCCBF3002ADAAF /* Post.swift in Sources */,
 				ECAA17BF1FA78FAE00BF9B56 /* SignInVC.swift in Sources */,
@@ -335,12 +580,15 @@
 				EC2EFCB31FCA27D700A642CC /* CatalogCell.swift in Sources */,
 				EC74EC0D1FAC03BD00CE0301 /* DataService.swift in Sources */,
 				ECD72A621FC0E88A007C0B1C /* CatalogosVC.swift in Sources */,
+				EC332B9C1FCBC6F600819FA3 /* GFQuery.m in Sources */,
 				ECA5BBC11FAB8463002203D2 /* FeedVC.swift in Sources */,
 				EC2EFCBC1FCA4A0300A642CC /* PublicacionCell.swift in Sources */,
 				EC2EFCB11FCA1BEA00A642CC /* CatalogModel.swift in Sources */,
+				EC332B991FCBC6F600819FA3 /* GFBase32Utils.m in Sources */,
 				ECAA17BD1FA78FAE00BF9B56 /* AppDelegate.swift in Sources */,
 				ECC69ECC1FAA91CE000EE1C3 /* Constants.swift in Sources */,
 				EC2002481FCAEDC900722449 /* DesplegarPublicacionVC.swift in Sources */,
+				EC332B981FCBC6F600819FA3 /* GeoFire.m in Sources */,
 				EC7C07C31FAB454E006E820E /* ShadowRoundedButton.swift in Sources */,
 				EC2EFCB71FCA496800A642CC /* DesplegarCatalogoVC.swift in Sources */,
 				EC74EC0A1FABF01900CE0301 /* PostCell.swift in Sources */,
@@ -348,6 +596,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC6FC76C1FCBD4880046D909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6FC7681FCBD4880046D909 /* InsydeWatch Extension */;
+			targetProxy = EC6FC76B1FCBD4880046D909 /* PBXContainerItemProxy */;
+		};
+		EC6FC7791FCBD4880046D909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6FC75C1FCBD4880046D909 /* InsydeWatch */;
+			targetProxy = EC6FC7781FCBD4880046D909 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */ = {
@@ -369,6 +630,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC6FC77B1FCBD4880046D909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
+				IBSC_MODULE = InsydeWatch_Extension;
+				INFOPLIST_FILE = InsydeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		EC6FC77C1FCBD4880046D909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
+				IBSC_MODULE = InsydeWatch_Extension;
+				INFOPLIST_FILE = InsydeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		EC6FC77D1FCBD4880046D909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
+				INFOPLIST_FILE = "InsydeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		EC6FC77E1FCBD4880046D909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZC9R4H27R;
+				INFOPLIST_FILE = "InsydeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
 		ECAA17C91FA78FAE00BF9B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,6 +880,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC6FC77F1FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6FC77D1FCBD4880046D909 /* Debug */,
+				EC6FC77E1FCBD4880046D909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6FC7811FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6FC77B1FCBD4880046D909 /* Debug */,
+				EC6FC77C1FCBD4880046D909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ECAA17B41FA78FAD00BF9B56 /* Build configuration list for PBXProject "Insyde" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

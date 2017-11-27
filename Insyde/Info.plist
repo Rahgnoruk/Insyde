@@ -40,6 +40,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Access to camera is necessary to take photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access to photos is required for posting</string>
 	<key>UILaunchStoryboardName</key>
