@@ -41,9 +41,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Access to camera is necessary to take photos</string>
+	<string>El acceso a su camara es necesario para tomar fotodenunicas</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>El acceso a su ubiacion se usa para el semaforo de seguridad</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Access to photos is required for posting</string>
+	<string>El acceso a sus fotos es necesario para postear </string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

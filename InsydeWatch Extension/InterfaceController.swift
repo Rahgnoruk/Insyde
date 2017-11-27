@@ -8,13 +8,11 @@
 
 import WatchKit
 import Foundation
-
-
-
+//import Firebase
 
 class InterfaceController: WKInterfaceController {
     //@IBOutlet var labelOut: WKInterfaceLabel!
-    
+    //var ref Firebase!
     
     @IBAction func passTop() {
         print("Top 5")
@@ -29,7 +27,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        //ref = Firebase(url:"")
         // Configure interface objects here.
         
     }

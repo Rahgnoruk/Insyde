@@ -25,17 +25,17 @@ class InterfaceControllerLast: WKInterfaceController {
         //num = context[0] as! Int
         num=context as! [Int]
         
-        print(context)
+        print(context!)
         //Aquí se copian la parte de los 5 nuevos en array
         switch num[0]{
         case 1:
-            var copiedTop: FiveTop = FiveTop()
+            let copiedTop: FiveTop = FiveTop()
             copyTitlesTop=copiedTop.title
             copyIMGTop=copiedTop.imgURL
             
             setFiveTop()
         case 0:
-            var copiedNew: FiveNew = FiveNew()
+            let copiedNew: FiveNew = FiveNew()
             copyTitlesNew=copiedNew.title
             copyIMGNew=copiedNew.imgURL
             
@@ -44,7 +44,7 @@ class InterfaceControllerLast: WKInterfaceController {
             break
             
         }
-        var copiedNew: FiveNew = FiveNew()
+        let copiedNew: FiveNew = FiveNew()
         copyTitlesNew=copiedNew.title
         copyIMGNew=copiedNew.imgURL
     }

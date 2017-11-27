@@ -70,8 +70,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMK-J6-yqx" customClass="RoundButton" customModule="Insyde" customModuleProvider="target">
-                                <rect key="frame" x="110" y="283" width="155" height="102"/>
+                                <rect key="frame" x="108" y="283" width="160" height="110"/>
                                 <color key="backgroundColor" red="0.23002448680000001" green="0.35028207300000003" blue="0.5958353877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="cKv-GN-a8y"/>
+                                    <constraint firstAttribute="width" constant="160" id="ifu-Pz-wYQ"/>
+                                </constraints>
                                 <state key="normal" image="f">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -80,19 +84,19 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B6O-IU-zxq" customClass="SignInTextField" customModule="Insyde" customModuleProvider="target">
-                                <rect key="frame" x="20" y="407" width="335" height="30"/>
+                                <rect key="frame" x="20" y="415" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contrasena" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3P-pb-I5Y" customClass="SignInTextField" customModule="Insyde" customModuleProvider="target">
-                                <rect key="frame" x="20" y="452" width="335" height="30"/>
+                                <rect key="frame" x="20" y="460" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-7f-nvA" customClass="ShadowRoundedButton" customModule="Insyde" customModuleProvider="target">
-                                <rect key="frame" x="20" y="513" width="335" height="30"/>
+                                <rect key="frame" x="20" y="521" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.75816315412521362" green="0.20480719208717346" blue="0.17498758435249329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ingresar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,21 +111,20 @@
                             <constraint firstItem="B6O-IU-zxq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="12r-tL-t1y"/>
                             <constraint firstItem="QPh-7f-nvA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="16x-pg-w68"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a94-7E-Dsf" secondAttribute="trailing" id="1Mg-RC-1eS"/>
+                            <constraint firstItem="B6O-IU-zxq" firstAttribute="top" secondItem="RMK-J6-yqx" secondAttribute="bottom" constant="22" id="2Wy-rN-XrM"/>
                             <constraint firstItem="lFj-HC-Fdw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2hN-cE-ciA"/>
                             <constraint firstItem="kWJ-LU-FSM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="4qL-d0-Hl9"/>
                             <constraint firstItem="lFj-HC-Fdw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5VI-hj-XZM"/>
-                            <constraint firstItem="RMK-J6-yqx" firstAttribute="centerX" secondItem="a94-7E-Dsf" secondAttribute="centerX" id="6Xm-hc-vzA"/>
-                            <constraint firstItem="RMK-J6-yqx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C6x-qz-Ajf"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="86g-Wc-NeI"/>
                             <constraint firstItem="QPh-7f-nvA" firstAttribute="top" secondItem="a3P-pb-I5Y" secondAttribute="bottom" constant="31" id="DWf-2j-uKm"/>
                             <constraint firstItem="kWJ-LU-FSM" firstAttribute="top" secondItem="a94-7E-Dsf" secondAttribute="bottom" constant="15" id="E2C-xO-xYy"/>
                             <constraint firstItem="a94-7E-Dsf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Iej-4I-GTn"/>
-                            <constraint firstItem="RMK-J6-yqx" firstAttribute="top" secondItem="kWJ-LU-FSM" secondAttribute="bottom" constant="61" id="PFd-UQ-SUC"/>
-                            <constraint firstItem="B6O-IU-zxq" firstAttribute="top" secondItem="RMK-J6-yqx" secondAttribute="bottom" constant="22" id="boc-5v-eb9"/>
+                            <constraint firstItem="RMK-J6-yqx" firstAttribute="top" secondItem="kWJ-LU-FSM" secondAttribute="bottom" constant="61" id="IkD-4Z-2cJ"/>
+                            <constraint firstItem="B6O-IU-zxq" firstAttribute="top" secondItem="RMK-J6-yqx" secondAttribute="bottom" constant="22" id="LXZ-9s-Tk2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWJ-LU-FSM" secondAttribute="trailing" constant="16" id="byl-HL-4Nz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6O-IU-zxq" secondAttribute="trailing" constant="20" id="mLm-Ks-VYx"/>
                             <constraint firstItem="lFj-HC-Fdw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r1b-6E-2Ff"/>
                             <constraint firstItem="a3P-pb-I5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sXo-2H-K91"/>
-                            <constraint firstItem="RMK-J6-yqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="swf-Co-3u7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QPh-7f-nvA" secondAttribute="trailing" constant="20" id="t0k-2a-Vcw"/>
                             <constraint firstItem="a94-7E-Dsf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tMa-zN-YcC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3P-pb-I5Y" secondAttribute="trailing" constant="20" id="uAA-eH-z4E"/>
@@ -142,7 +145,7 @@
         <!--Mapa de Seguridad-->
         <scene sceneID="kDD-hQ-YIi">
             <objects>
-                <viewController id="NDd-sq-oHd" sceneMemberID="viewController">
+                <viewController id="NDd-sq-oHd" customClass="MapVC" customModule="Insyde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JGn-tE-5xc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,17 +153,33 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-eT-RpD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-BX-iIc">
+                                <rect key="frame" x="16" y="542" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="g8f-zd-guT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="k44-wd-COM"/>
+                                </constraints>
+                                <state key="normal" image="MapPinx1"/>
+                                <connections>
+                                    <action selector="ResetMapButton:" destination="NDd-sq-oHd" eventType="touchUpInside" id="lwb-Vr-Iey"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vub-eT-RpD" secondAttribute="trailing" id="Gvo-Of-ayW"/>
+                            <constraint firstItem="TIY-BX-iIc" firstAttribute="leading" secondItem="Uyv-Wb-ibt" secondAttribute="leading" constant="16" id="TBe-3U-aUb"/>
                             <constraint firstItem="Vub-eT-RpD" firstAttribute="bottom" secondItem="Uyv-Wb-ibt" secondAttribute="bottom" id="cgh-hm-TPj"/>
                             <constraint firstItem="Vub-eT-RpD" firstAttribute="leading" secondItem="JGn-tE-5xc" secondAttribute="leading" id="dxq-bB-Yb4"/>
                             <constraint firstItem="Vub-eT-RpD" firstAttribute="top" secondItem="Uyv-Wb-ibt" secondAttribute="top" id="qpm-D9-z8X"/>
+                            <constraint firstItem="Uyv-Wb-ibt" firstAttribute="bottom" secondItem="TIY-BX-iIc" secondAttribute="bottom" constant="16" id="szl-65-uLP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uyv-Wb-ibt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa de Seguridad" id="T0r-aZ-MEE"/>
+                    <connections>
+                        <outlet property="mapView" destination="Vub-eT-RpD" id="YqS-iK-0Dv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0A-pw-cke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -639,6 +658,7 @@
     </scenes>
     <resources>
         <image name="InsydeLogo" width="171" height="171"/>
+        <image name="MapPinx1" width="31" height="55"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
         <image name="f" width="352" height="328"/>

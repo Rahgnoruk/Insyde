@@ -28,6 +28,8 @@ class DataService{
     private var _REF_DOCUMENTOSACADEMICOS = DB_BASE.child("Documentos Academicos")
     private var _REF_LIBROS = DB_BASE.child("Libros")
     private var _REF_NOTICIAS = DB_BASE.child("Noticias")
+    
+    private var _REF_SEMAFOROS = DB_BASE.child("Semaforo")
     //Storage References, se usan para hacer upload
     private var _REF_POST_IMAGES = STORAGE_BASE.child("pdfArticulos")
     
@@ -72,6 +74,9 @@ class DataService{
     }
     var REF_NOTICIAS: DatabaseReference{
         return _REF_NOTICIAS
+    }
+    var REF_SEMAFOROS: DatabaseReference{
+        return _REF_SEMAFOROS
     }
     
     var REF_POST_IMAGES: StorageReference{

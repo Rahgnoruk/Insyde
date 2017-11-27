@@ -1,0 +1,6 @@
+framework module Pods_InsydeWatch {
+  umbrella header "Pods-InsydeWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

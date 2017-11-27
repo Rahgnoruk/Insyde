@@ -16,3 +16,16 @@ target 'Insyde' do
   pod 'FacebookShare'
   pod 'SwiftKeychainWrapper'
 end
+
+target 'InsydeWatch' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for InsydeWatch
+end
+
+target 'InsydeWatch Extension' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for InsydeWatch Extension
+end

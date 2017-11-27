@@ -27,6 +27,19 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(SignInVC.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
     
     override func viewDidAppear(_ animated: Bool){
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6EEC794ED948BECE3800E7 /* Pods_InsydeWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B44FD0992C36858572EEE9 /* Pods_InsydeWatch.framework */; };
+		918AF80693BAB86701B05A0E /* Pods_InsydeWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740F1B86C0FD2E6DBE5E2511 /* Pods_InsydeWatch_Extension.framework */; };
 		CC3C13CB5C519DADABA34B2B /* Pods_Insyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B517813D1B681753394BE4CE /* Pods_Insyde.framework */; };
 		EC2002481FCAEDC900722449 /* DesplegarPublicacionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2002471FCAEDC900722449 /* DesplegarPublicacionVC.swift */; };
 		EC2EFCB11FCA1BEA00A642CC /* CatalogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2EFCB01FCA1BEA00A642CC /* CatalogModel.swift */; };
@@ -21,6 +23,8 @@
 		EC332B9C1FCBC6F600819FA3 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EC332B971FCBC6F600819FA3 /* GFQuery.m */; };
 		EC356D4C1FBF883C00196013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC356D4B1FBF883C00196013 /* GoogleService-Info.plist */; };
 		EC4517171FCB4EE70065900D /* ShadowRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4517161FCB4EE70065900D /* ShadowRoundedImage.swift */; };
+		EC4F1A5D1FCC0AF500F4FE11 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F1A5C1FCC0AF500F4FE11 /* MapVC.swift */; };
+		EC4F1A621FCC3C4500F4FE11 /* SecurityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F1A611FCC3C4500F4FE11 /* SecurityAnnotation.swift */; };
 		EC6FC76A1FCBD4880046D909 /* InsydeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC6FC76F1FCBD4880046D909 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC76E1FCBD4880046D909 /* InterfaceController.swift */; };
 		EC6FC7711FCBD4880046D909 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FC7701FCBD4880046D909 /* ExtensionDelegate.swift */; };
@@ -94,8 +98,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13BA78AF8FCD96A339897DFC /* Pods-InsydeWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsydeWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InsydeWatch/Pods-InsydeWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		357C2DD9DAD6A296FFDBA61A /* Pods-InsydeWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsydeWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-InsydeWatch Extension/Pods-InsydeWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		490ACA2108AE14B997DC997F /* Pods-InsydeWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsydeWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InsydeWatch Extension/Pods-InsydeWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.release.xcconfig"; sourceTree = "<group>"; };
 		54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insyde/Pods-Insyde.debug.xcconfig"; sourceTree = "<group>"; };
+		5B6E40E993A04F415E584FED /* Pods-InsydeWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsydeWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-InsydeWatch/Pods-InsydeWatch.release.xcconfig"; sourceTree = "<group>"; };
+		740F1B86C0FD2E6DBE5E2511 /* Pods_InsydeWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsydeWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B44FD0992C36858572EEE9 /* Pods_InsydeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsydeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517813D1B681753394BE4CE /* Pods_Insyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2002471FCAEDC900722449 /* DesplegarPublicacionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesplegarPublicacionVC.swift; sourceTree = "<group>"; };
 		EC2EFCB01FCA1BEA00A642CC /* CatalogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModel.swift; sourceTree = "<group>"; };
@@ -120,6 +130,9 @@
 		EC332B971FCBC6F600819FA3 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		EC356D4B1FBF883C00196013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC4517161FCB4EE70065900D /* ShadowRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowRoundedImage.swift; sourceTree = "<group>"; };
+		EC4F1A5C1FCC0AF500F4FE11 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		EC4F1A601FCC39A900F4FE11 /* Insyde-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Insyde-BridgingHeader.h"; sourceTree = "<group>"; };
+		EC4F1A611FCC3C4500F4FE11 /* SecurityAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnotation.swift; sourceTree = "<group>"; };
 		EC6FC75D1FCBD4880046D909 /* InsydeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsydeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6FC7641FCBD4880046D909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6FC7691FCBD4880046D909 /* InsydeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InsydeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,10 +174,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		38C69D550F61B51640147037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6EEC794ED948BECE3800E7 /* Pods_InsydeWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC6FC7661FCBD4880046D909 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918AF80693BAB86701B05A0E /* Pods_InsydeWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +209,8 @@
 				ECA5BBBD1FAB633A002203D2 /* FBSDKLoginKit.framework */,
 				ECA5BBBE1FAB633A002203D2 /* FBSDKShareKit.framework */,
 				B517813D1B681753394BE4CE /* Pods_Insyde.framework */,
+				79B44FD0992C36858572EEE9 /* Pods_InsydeWatch.framework */,
+				740F1B86C0FD2E6DBE5E2511 /* Pods_InsydeWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +220,10 @@
 			children = (
 				54DF988DE6C6922F4D990D6F /* Pods-Insyde.debug.xcconfig */,
 				4C97DC96FDD134FEEB6725B8 /* Pods-Insyde.release.xcconfig */,
+				13BA78AF8FCD96A339897DFC /* Pods-InsydeWatch.debug.xcconfig */,
+				5B6E40E993A04F415E584FED /* Pods-InsydeWatch.release.xcconfig */,
+				490ACA2108AE14B997DC997F /* Pods-InsydeWatch Extension.debug.xcconfig */,
+				357C2DD9DAD6A296FFDBA61A /* Pods-InsydeWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -244,6 +272,7 @@
 				EC9CE3381FBCCBF3002ADAAF /* Post.swift */,
 				EC2EFCB01FCA1BEA00A642CC /* CatalogModel.swift */,
 				EC2EFCB91FCA49E900A642CC /* PublicacionModel.swift */,
+				EC4F1A611FCC3C4500F4FE11 /* SecurityAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +301,7 @@
 				ECD72A611FC0E88A007C0B1C /* CatalogosVC.swift */,
 				EC2EFCB61FCA496800A642CC /* DesplegarCatalogoVC.swift */,
 				EC2002471FCAEDC900722449 /* DesplegarPublicacionVC.swift */,
+				EC4F1A5C1FCC0AF500F4FE11 /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -349,6 +379,7 @@
 				ECAA17C01FA78FAE00BF9B56 /* Main.storyboard */,
 				ECAA17C31FA78FAE00BF9B56 /* Assets.xcassets */,
 				ECAA17C51FA78FAE00BF9B56 /* LaunchScreen.storyboard */,
+				EC4F1A601FCC39A900F4FE11 /* Insyde-BridgingHeader.h */,
 			);
 			path = Insyde;
 			sourceTree = "<group>";
@@ -368,8 +399,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6FC7811FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch" */;
 			buildPhases = (
+				B270A90730AE07B9299502F9 /* [CP] Check Pods Manifest.lock */,
 				EC6FC75B1FCBD4880046D909 /* Resources */,
 				EC6FC7801FCBD4880046D909 /* Embed App Extensions */,
+				38C69D550F61B51640147037 /* Frameworks */,
+				ED31F62D77946106B33EFEEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,9 +419,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6FC77F1FCBD4880046D909 /* Build configuration list for PBXNativeTarget "InsydeWatch Extension" */;
 			buildPhases = (
+				E2E5BFC030442BD7A2B434A9 /* [CP] Check Pods Manifest.lock */,
 				EC6FC7651FCBD4880046D909 /* Sources */,
 				EC6FC7661FCBD4880046D909 /* Frameworks */,
 				EC6FC7671FCBD4880046D909 /* Resources */,
+				FFAB678347890E8387FF7A14 /* [CP] Embed Pods Frameworks */,
+				5183F491A38430AEC81E169E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,6 +538,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5183F491A38430AEC81E169E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InsydeWatch Extension/Pods-InsydeWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A09245312061BAD7A9743000 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +566,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insyde/Pods-Insyde-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B270A90730AE07B9299502F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D691DFA1E23A5BA622AB8A09 /* [CP] Check Pods Manifest.lock */ = {
@@ -531,6 +598,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E2E5BFC030442BD7A2B434A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED31F62D77946106B33EFEEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InsydeWatch/Pods-InsydeWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F3D79FBE1DEB861ED9CFE96E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,6 +641,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insyde/Pods-Insyde-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAB678347890E8387FF7A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InsydeWatch Extension/Pods-InsydeWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -567,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4F1A621FCC3C4500F4FE11 /* SecurityAnnotation.swift in Sources */,
 				ECA5BBC31FABA59C002203D2 /* CircleView.swift in Sources */,
 				EC4517171FCB4EE70065900D /* ShadowRoundedImage.swift in Sources */,
 				EC332B9A1FCBC6F600819FA3 /* GFGeoHash.m in Sources */,
@@ -582,6 +695,7 @@
 				ECD72A621FC0E88A007C0B1C /* CatalogosVC.swift in Sources */,
 				EC332B9C1FCBC6F600819FA3 /* GFQuery.m in Sources */,
 				ECA5BBC11FAB8463002203D2 /* FeedVC.swift in Sources */,
+				EC4F1A5D1FCC0AF500F4FE11 /* MapVC.swift in Sources */,
 				EC2EFCBC1FCA4A0300A642CC /* PublicacionCell.swift in Sources */,
 				EC2EFCB11FCA1BEA00A642CC /* CatalogModel.swift in Sources */,
 				EC332B991FCBC6F600819FA3 /* GFBase32Utils.m in Sources */,
@@ -632,6 +746,7 @@
 /* Begin XCBuildConfiguration section */
 		EC6FC77B1FCBD4880046D909 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13BA78AF8FCD96A339897DFC /* Pods-InsydeWatch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -651,6 +766,7 @@
 		};
 		EC6FC77C1FCBD4880046D909 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B6E40E993A04F415E584FED /* Pods-InsydeWatch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -670,6 +786,7 @@
 		};
 		EC6FC77D1FCBD4880046D909 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490ACA2108AE14B997DC997F /* Pods-InsydeWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,6 +805,7 @@
 		};
 		EC6FC77E1FCBD4880046D909 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357C2DD9DAD6A296FFDBA61A /* Pods-InsydeWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -839,6 +957,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Insyde/Insyde-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -872,6 +991,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyfiedproductions.Insyde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Insyde/Insyde-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
