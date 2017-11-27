@@ -17,6 +17,13 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailField: SignInTextField!
     @IBOutlet weak var passwordField: SignInTextField!
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

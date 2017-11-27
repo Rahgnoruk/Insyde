@@ -1,36 +1,36 @@
 //
-//  PostCell.swift
+//  PublicacionCell.swift
 //  Insyde
 //
-//  Created by user132086 on 11/2/17.
+//  Created by user132086 on 11/25/17.
 //  Copyright © 2017 TonyfiedProductions. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class PostCell: UITableViewCell {
+class PublicacionCell: UITableViewCell {
 
-    @IBOutlet weak var titulo: UILabel!
+    @IBOutlet weak var titulo: UITextView!
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var descripcion: UITextView!
     
-    var post: Post!
+    var publicacionModel: PublicacionModel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    func configureCell(post: Post, img: UIImage? = nil){
-        self.post = post
-        self.descripcion.text = post.descripcion
-        self.titulo.text = post.titulo
+
+    func configureCell(publicacionModel: PublicacionModel, img: UIImage? = nil){
+        self.publicacionModel = publicacionModel
+        self.titulo.text = publicacionModel.titulo
+        self.descripcion.text = publicacionModel.descripcion
         
         if img != nil{
             self.imagen.image = img
         }else{
-            let ref = Storage.storage().reference(forURL: post.imgURL)
+            let ref = Storage.storage().reference(forURL: publicacionModel.imgURL)
             ref.getData(maxSize: 2*1024*1024, completion: {(data, error) in
                 if error != nil{
                     print("TONY: Unable to download image from storage")
@@ -38,11 +38,12 @@ class PostCell: UITableViewCell {
                     if let imgData = data{
                         if let img = UIImage(data: imgData){
                             self.imagen.image = img
-                            FeedVC.imageCache.setObject(img, forKey: post.imgURL as NSString)
+                            DesplegarCatalogoVC.imageCache.setObject(img, forKey: publicacionModel.pdfURL as NSString)
                         }
                     }
                 }
             })
         }
     }
+
 }

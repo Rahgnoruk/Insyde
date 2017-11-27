@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignInButton: UIButton {
+class ShadowRoundedButton: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +20,4 @@ class SignInButton: UIButton {
         layer.cornerRadius = 2.0;
         
     }
-
 }

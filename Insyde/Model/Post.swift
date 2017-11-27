@@ -9,39 +9,41 @@
 import Foundation
 
 class Post{
-    private var _autores: String!
-    private var _pdfURL: String!
-    private var _titulo: String!
     private var _postId: String!
+    private var _titulo: String!
+    private var _descripcion: String!
+    private var _imgURL: String!
     
-    var autores: String{
-        return _autores
-    }
-    var pdfURL: String{
-        return _pdfURL
+    var postId: String{
+        return _postId
     }
     var titulo: String{
         return _titulo
     }
-    var postId: String{
-        return _postId
+    var descripcion: String{
+        return _descripcion
+    }
+    var imgURL: String{
+        return _imgURL
     }
     
-    init(autores: String, pdfURL: String, titulo: String){
-        self._autores = autores
-        self._pdfURL = pdfURL
+    
+    
+    init(titulo: String, descripcion: String, imgURL: String){
         self._titulo = titulo
+        self._descripcion = descripcion
+        self._imgURL = imgURL
     }
     init(postId: String, postData: Dictionary<String, Any>){
         self._postId = postId
-        if let autores = postData["autores"] as? String{
-            self._autores = autores
-        }
-        if let pdfURL = postData["pdfUrl"] as? String{
-            self._pdfURL = pdfURL
-        }
         if let titulo = postData["titulo"] as? String{
             self._titulo = titulo
+        }
+        if let descripcion = postData["descripcion"] as? String{
+            self._descripcion = descripcion
+        }
+        if let imgURL = postData["imgURL"] as? String{
+            self._imgURL = imgURL
         }
         
     }
